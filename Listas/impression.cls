@@ -61,7 +61,7 @@
         {\parbox{35em}{\fontsize{30}{30}\selectfont\bfseries\thetitle\phantom{Ç}}}
 
         {\parbox{35em}{\huge\@subtitle}}
-        \vspace{4em}
+        \vfill
 
         {\parbox{35em}{\Large\@author}}
         \vspace{1ex}
