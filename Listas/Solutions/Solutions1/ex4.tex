@@ -1,0 +1,33 @@
+Knowing that $\nabla\cdot \vb{g} = -4\pi G \rho$, we can use that $\vb{g} = \nabla U$ to obtain the Poisson equation for the gravitational potential $\nabla^{2} U = -4\pi G \rho$. In the case of a hollow sphere, we have $\rho = 0$ everywhere, so the Poisson equation reduces to the Laplace equation $\nabla^{2} U = 0$. The general solution to the Laplace equation in spherical coordinates can be written as:
+\begin{equation*}
+    U(r, \theta) = \sum_{\ell=0}^{\infty} \qty[A_{\ell} r^{\ell} + \frac{B_{\ell}}{r^{\ell+1}}] P_{\ell}(\cos\theta)
+\end{equation*}
+
+Inside the sphere, the solution must be finite at $r=0$, which implies that $B_{\ell} = 0$ for all $\ell$. Therefore, the potential inside the sphere can be written as:
+\begin{equation*}
+    U_{\text{inside}}(r, \theta) = \sum_{\ell=0}^{\infty} A_{\ell} r^{\ell} P_{\ell}(\cos\theta)
+\end{equation*}
+
+On the surface of the sphere, we have $U(R, \theta) = U(\theta)$, which gives us:
+\begin{equation*}
+    U(\theta) = \sum_{\ell=0}^{\infty} A_{\ell} R^{\ell} P_{\ell}(\cos\theta)
+\end{equation*}
+
+Multiplying both sides by $P_{\ell'}(\cos\theta)$ and integrating over $\dd{\cos\theta}$ from $-1$ to $1$:
+\begin{equation*}
+    \int_{-1}^{1} U(\theta) P_{\ell'}(\cos\theta)\dd{\cos\theta} = \sum_{\ell=0}^{\infty} A_{\ell} R^{\ell} \int_{-1}^{1} P_{\ell}(\cos\theta) P_{\ell'}(\cos\theta)\dd{\cos\theta}
+\end{equation*}
+
+Using the orthogonality of the Legendre polynomials, we have for the integral on the right-hand side the   result $\frac{2}{2\ell' + 1} \delta_{\ell \ell'}$, therefore:
+\begin{equation*}
+    \int_{-1}^{1} U(\theta) P_{\ell'}(\cos\theta)\dd{\cos\theta} = A_{\ell'} R^{\ell'} \frac{2}{2\ell' + 1}
+\end{equation*}
+implying that:
+\begin{equation*}
+    A_{\ell} = \frac{2\ell + 1}{2 R^{\ell}} \int_{-1}^{1} U(\theta) P_{\ell}(\cos\theta)\dd{\cos\theta}
+\end{equation*}
+
+Thus, the potential inside the sphere can be expressed as:
+\begin{answer}
+    U_{\text{inside}}(r, \theta) = \sum_{\ell=0}^{\infty} \frac{2\ell + 1}{2 R^{\ell}} r^{\ell} P_{\ell}(\cos\theta) \int_{-1}^{1} U(\theta) P_{\ell}(\cos\theta)\dd{\cos\theta} 
+\end{answer}

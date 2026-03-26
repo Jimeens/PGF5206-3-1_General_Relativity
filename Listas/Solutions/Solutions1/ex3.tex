@@ -1,0 +1,49 @@
+To find the gravitational potential at a distance $s$ from an infinitely long straight wire, we can use:
+\begin{equation*}
+    U(\vb{s}) = G \int \frac{\dd{m}}{\norm{\vb{s}}}
+\end{equation*}
+
+Since the wire is infinitely long, we can consider a small segment of the wire of length $\dd{z}$, which has a mass $\dd{m} = \lambda \dd{z}$. The distance from this segment to the point where we want to calculate the potential is given by $r = \sqrt{s^{2} + z^{2}}$. Taking a segment with length $2L$ centered at $z=0$, we can write:
+\begin{equation*}
+    U(s) = G \int_{-L}^{L} \frac{\lambda }{\sqrt{s^{2} + z^{2}}}\dd{z} = G \lambda \int_{-L}^{L} \frac{1}{\sqrt{s^{2} + z^{2}}}\dd{z}
+\end{equation*}
+
+The indefinite integral has a known solution:
+\begin{equation*}
+    \int \frac{1}{\sqrt{s^{2} + z^{2}}}\dd{z} = \ln\qty(z + \sqrt{s^{2} + z^{2}}) + C
+\end{equation*}
+
+So, the potential can be calculated as:
+\begin{equation*}
+    U(s) = G \lambda \qty[ \ln\qty(L + \sqrt{s^{2} + L^{2}}) - \ln\qty(-L + \sqrt{s^{2} + L^{2}}) ] = G \lambda \ln\qty(\frac{L + \sqrt{s^{2} + L^{2}}}{-L + \sqrt{s^{2} + L^{2}}})
+\end{equation*}
+
+The argument of the logarithm can be simplified as:
+\begin{equation*}
+    \frac{L + \sqrt{s^{2} + L^{2}}}{-L + \sqrt{s^{2} + L^{2}}} = \frac{L + \sqrt{s^{2} + L^{2}}}{ - L + \sqrt{s^{2} + L^{2}}} \cdot \frac{L + \sqrt{s^{2} + L^{2}}}{L + \sqrt{s^{2} + L^{2}}} = \frac{(L + \sqrt{s^{2} + L^{2}})^{2}}{s^{2}}
+\end{equation*}
+
+For large $L$, we can approximate $\sqrt{s^{2} + L^{2}} \approx L$, which gives us:
+\begin{equation*}
+    U(s) = 2G\lambda \ln\qty(\dfrac{2L}{s}) = 2G\lambda \ln(2L) - 2G\lambda \ln(s)
+\end{equation*}
+
+The first term diverges as $L \to \infty$, but does not depend on $s$, so it has no physical effect to the gravitational field. This can be absorbed into a reference potential, i.e., the difference:
+\begin{equation*}
+    U(s) - U(s_{0}) = -2G\lambda \ln(s) + 2G\lambda \ln(s_{0}) = -2G\lambda \ln\qty(\frac{s}{s_{0}})
+\end{equation*}
+
+Choosing $s_{0}$ such that $U(s_{0}) = 0$, we can write the potential as:
+\begin{answer}
+    U(s) = -2G\lambda \ln\qty(\dfrac{s}{s_{0}})
+\end{answer}
+
+To find the gravitational field, we can compute the gradient of the potential:
+\begin{equation*}
+    \vb{g}(\vb{s}) = \nabla U(s) = -2G\lambda \nabla \qty[\ln\qty(\dfrac{s}{s_{0}})] = -2G\lambda \dv{}{s}\qty[\ln\qty(\dfrac{s}{s_{0}})] \hat{\vb{s}} = -2G\lambda \frac{1}{s} \hat{\vb{s}}
+\end{equation*}
+
+Concluding that:
+\begin{answer}
+    \vb{g}(\vb{s}) = -\frac{2G\lambda}{s} \hat{\vb{s}}
+\end{answer}

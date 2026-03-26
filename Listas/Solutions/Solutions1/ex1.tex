@@ -1,0 +1,34 @@
+To find the gravitational field inside the sphere, we can use Gauss's law, which states that the gravitational flux through a closed surface is proportional to the enclosed mass. So, we can consider a spherical Gaussian surface of radius $r$ (where $r < R$) centered at the center of the sphere. The mass enclosed by this Gaussian surface is given by:
+\begin{equation*}
+    M_{\text{enclosed}} = \int\limits_{V} \rho(\vb{r}') \dd[3]{\vb{r}'} = \rho \int_{0}^{r} \int_{0}^{\pi} \int_{0}^{2\pi} (r')^{2} \sin\theta' \dd{\phi'} \dd{\theta'} \dd{r'} = \frac{4}{3} \pi r^{3} \rho
+\end{equation*}
+
+The gravitational field at a distance $r$ from the center of the sphere can be found using Gauss's law too:
+\begin{equation*}
+    \oint\limits_{S} \vb{g}(\vb{r}') \cdot \dd[2]{\vb{r}'} = -4\pi G M_{\text{enclosed}}
+\end{equation*}
+
+Since the gravitational field is radial and has the same magnitude at every point on the Gaussian surface, we can simplify this to:
+\begin{equation*}
+    g(r) 4\pi r^{2} = -4\pi G \qty(\frac{4}{3} \pi r^{3} \rho)
+\end{equation*}
+
+This gives us the gravitational field inside the sphere:
+\begin{answer}
+    \vb{g}(\vb{r}) = -\frac{4}{3} \pi G \rho r \hat{\vb{r}}, \quad \text{for } r < R
+\end{answer}
+
+To find the gravitational field outside the sphere, we can use the same argument, but now the Gaussian surface is a sphere of radius $r$ (where $r > R$) that encloses the entire mass of the sphere. Therefore, the enclosed mass is:
+\begin{equation*}
+    M_{\text{enclosed}} = \frac{4}{3} \pi R^{3} \rho
+\end{equation*}
+
+Using the same application of Gauss's law to find the gravitational field, we have:
+\begin{equation*}
+    g(r) 4\pi r^{2} = -4\pi G M_{\text{enclosed}} = -4\pi G \qty(\frac{4}{3} \pi R^{3} \rho)
+\end{equation*}
+
+This gives us the gravitational field outside the sphere:
+\begin{answer}
+    \vb{g}(\vb{r}) = -\frac{4}{3} \pi G \rho \frac{R^{3}}{r^{2}} \hat{\vb{r}}, \quad \text{for } r > R
+\end{answer}

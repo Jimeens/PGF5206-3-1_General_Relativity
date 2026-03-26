@@ -505,13 +505,19 @@ INPUT ./Solutions/Solutions1/ex1.tex
 INPUT ./Figures/Impression, soleil levant - Claude Monet.png
 INPUT ./Figures/vanilla.png
 INPUT ./Figures/vanilla.png
+INPUT ./Figures/Impression, soleil levant - Claude Monet.png
+INPUT ./Figures/vanilla.png
 INPUT ./Solutions/Solutions1/ex2.tex
 INPUT ./Figures/Impression, soleil levant - Claude Monet.png
 INPUT ./Figures/vanilla.png
 INPUT ./Solutions/Solutions1/ex3.tex
 INPUT ./Figures/Impression, soleil levant - Claude Monet.png
 INPUT ./Figures/vanilla.png
+INPUT ./Figures/Impression, soleil levant - Claude Monet.png
+INPUT ./Figures/vanilla.png
 INPUT ./Solutions/Solutions1/ex4.tex
+INPUT ./Figures/Impression, soleil levant - Claude Monet.png
+INPUT ./Figures/vanilla.png
 INPUT ./Figures/Impression, soleil levant - Claude Monet.png
 INPUT ./Figures/vanilla.png
 INPUT ./Solutions/Solutions1/ex5.tex
@@ -523,5 +529,11 @@ INPUT ./Figures/vanilla.png
 INPUT ./lista1.aux
 INPUT ./lista1.run.xml
 OUTPUT lista1.run.xml
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb

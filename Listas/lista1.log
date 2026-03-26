@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2025.10.2)  26 MAR 2026 09:48
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2025.10.2)  26 MAR 2026 12:22
  system commands enabled.
  file:line:error style messages enabled.
 **/home/jimeens/PGF5206-3-1_General_Relativity-1/Listas/lista1.tex
@@ -2795,22 +2795,36 @@ Package microtype Info: Unknown slot number of character
 Package microtype Info: Character `₡' is missing
 (microtype)             in font `TU/EBGaramond(0)/m/n/45'.
 (microtype)             Ignoring protrusion settings for this character.
- (./Solutions/Solutions1/ex1.tex)
+ (./Solutions/Solutions1/ex1.tex
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/b/n' will be
+(Font)              scaled to size 8.22913pt on input line 3.
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/b/n' will be
+(Font)              scaled to size 6.17184pt on input line 3.
+)
 File: Figures/Impression, soleil levant - Claude Monet.png Graphic file (type png)
 <use Figures/Impression, soleil levant - Claude Monet.png>
-Package luatex.def Info: Figures/Impression, soleil levant - Claude Monet.png  used on input line 23.
+Package luatex.def Info: Figures/Impression, soleil levant - Claude Monet.png  used on input line 22.
 (luatex.def)             Requested size: 1088.4324pt x 845.04684pt.
 <Figures/vanilla.png, id=15, 513.92pt x 513.92pt>
 File: Figures/vanilla.png Graphic file (type png)
 <use Figures/vanilla.png>
-Package luatex.def Info: Figures/vanilla.png  used on input line 23.
+Package luatex.def Info: Figures/vanilla.png  used on input line 22.
 (luatex.def)             Requested size: 71.12491pt x 71.13188pt.
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
 [1
 
 
-<./Figures/vanilla.png>] (./Solutions/Solutions1/ex2.tex)
+<./Figures/vanilla.png>]
+File: Figures/Impression, soleil levant - Claude Monet.png Graphic file (type png)
+<use Figures/Impression, soleil levant - Claude Monet.png>
+Package luatex.def Info: Figures/Impression, soleil levant - Claude Monet.png  used on input line 23.
+(luatex.def)             Requested size: 1088.4324pt x 845.04684pt.
+File: Figures/vanilla.png Graphic file (type png)
+<use Figures/vanilla.png>
+Package luatex.def Info: Figures/vanilla.png  used on input line 23.
+(luatex.def)             Requested size: 71.12491pt x 71.13188pt.
+ [2] (./Solutions/Solutions1/ex2.tex)
 File: Figures/Impression, soleil levant - Claude Monet.png Graphic file (type png)
 <use Figures/Impression, soleil levant - Claude Monet.png>
 Package luatex.def Info: Figures/Impression, soleil levant - Claude Monet.png  used on input line 33.
@@ -2819,7 +2833,16 @@ File: Figures/vanilla.png Graphic file (type png)
 <use Figures/vanilla.png>
 Package luatex.def Info: Figures/vanilla.png  used on input line 33.
 (luatex.def)             Requested size: 71.12491pt x 71.13188pt.
- [2] (./Solutions/Solutions1/ex3.tex)
+ [3] (./Solutions/Solutions1/ex3.tex
+File: Figures/Impression, soleil levant - Claude Monet.png Graphic file (type png)
+<use Figures/Impression, soleil levant - Claude Monet.png>
+Package luatex.def Info: Figures/Impression, soleil levant - Claude Monet.png  used on input line 40.
+(luatex.def)             Requested size: 1088.4324pt x 845.04684pt.
+File: Figures/vanilla.png Graphic file (type png)
+<use Figures/vanilla.png>
+Package luatex.def Info: Figures/vanilla.png  used on input line 40.
+(luatex.def)             Requested size: 71.12491pt x 71.13188pt.
+ [4])
 File: Figures/Impression, soleil levant - Claude Monet.png Graphic file (type png)
 <use Figures/Impression, soleil levant - Claude Monet.png>
 Package luatex.def Info: Figures/Impression, soleil levant - Claude Monet.png  used on input line 43.
@@ -2828,7 +2851,16 @@ File: Figures/vanilla.png Graphic file (type png)
 <use Figures/vanilla.png>
 Package luatex.def Info: Figures/vanilla.png  used on input line 43.
 (luatex.def)             Requested size: 71.12491pt x 71.13188pt.
- [3] (./Solutions/Solutions1/ex4.tex)
+ [5] (./Solutions/Solutions1/ex4.tex)
+File: Figures/Impression, soleil levant - Claude Monet.png Graphic file (type png)
+<use Figures/Impression, soleil levant - Claude Monet.png>
+Package luatex.def Info: Figures/Impression, soleil levant - Claude Monet.png  used on input line 52.
+(luatex.def)             Requested size: 1088.4324pt x 845.04684pt.
+File: Figures/vanilla.png Graphic file (type png)
+<use Figures/vanilla.png>
+Package luatex.def Info: Figures/vanilla.png  used on input line 52.
+(luatex.def)             Requested size: 71.12491pt x 71.13188pt.
+ [6]
 File: Figures/Impression, soleil levant - Claude Monet.png Graphic file (type png)
 <use Figures/Impression, soleil levant - Claude Monet.png>
 Package luatex.def Info: Figures/Impression, soleil levant - Claude Monet.png  used on input line 53.
@@ -2837,7 +2869,7 @@ File: Figures/vanilla.png Graphic file (type png)
 <use Figures/vanilla.png>
 Package luatex.def Info: Figures/vanilla.png  used on input line 53.
 (luatex.def)             Requested size: 71.12491pt x 71.13188pt.
- [4] (./Solutions/Solutions1/ex5.tex)
+ [7] (./Solutions/Solutions1/ex5.tex)
 File: Figures/Impression, soleil levant - Claude Monet.png Graphic file (type png)
 <use Figures/Impression, soleil levant - Claude Monet.png>
 Package luatex.def Info: Figures/Impression, soleil levant - Claude Monet.png  used on input line 63.
@@ -2846,7 +2878,7 @@ File: Figures/vanilla.png Graphic file (type png)
 <use Figures/vanilla.png>
 Package luatex.def Info: Figures/vanilla.png  used on input line 63.
 (luatex.def)             Requested size: 71.12491pt x 71.13188pt.
- [5] (./Solutions/Solutions1/ex6.tex) 
+ [8] (./Solutions/Solutions1/ex6.tex) 
 AED: pageslts setting LastPage 
 File: Figures/Impression, soleil levant - Claude Monet.png Graphic file (type png)
 <use Figures/Impression, soleil levant - Claude Monet.png>
@@ -2856,7 +2888,7 @@ File: Figures/vanilla.png Graphic file (type png)
 <use Figures/vanilla.png>
 Package luatex.def Info: Figures/vanilla.png  used on input line 75.
 (luatex.def)             Requested size: 71.12491pt x 71.13188pt.
-[6]
+[9]
 \c@pagesLTS.arabic.1.local.count=\count580
  
 AED: pageslts setting VeryLastPage via AfterLastShipout 
@@ -2864,7 +2896,7 @@ AED: pageslts setting VeryLastPage via AfterLastShipout
 AED: pageslts setting LastPages via AfterLastShipout 
 
 
-Package pageslts Info: Total number of pages is odd.
+Package pageslts Info: Total number of pages is even.
 
 
 (./lista1.aux)
@@ -2878,19 +2910,19 @@ Package logreq Info: Writing requests to 'lista1.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 54489 strings out of 476553
+ 54566 strings out of 476553
  100000,2848258 words of node,token memory allocated
- 1282 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 5 glue, 4 kern, 1 glyph, 14 attribute, 200 glue_spec, 9 attribute_list, 3 write nodes
-   avail lists: 1:10,2:379,3:91,4:54,5:102,6:39,7:900,8:17,9:309,10:7,11:68
- 75057 multiletter control sequences out of 65536+600000
- 65 fonts using 13759999 bytes
- 167i,12n,152p,1204b,1644s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/opentype/public/ebgaramond/EBGaramond-Bold.otf></usr/share/fonts/opentype/ebgaramond/EBGaramond12-Regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on lista1.pdf (7 pages, 3984003 bytes).
+ 1451 words of node memory still in use:
+   8 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 1 margin_kern, 3 glyph, 61 attribute, 200 glue_spec, 32 attribute_list, 3 write nodes
+   avail lists: 1:10,2:1047,3:254,4:69,5:316,6:41,7:3616,8:71,9:861,10:7,11:248
+ 75106 multiletter control sequences out of 65536+600000
+ 67 fonts using 14790735 bytes
+ 167i,16n,152p,1204b,1644s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/fonts/opentype/ebgaramond/EBGaramond08-Regular.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/ebgaramond/EBGaramond-Bold.otf></usr/share/fonts/opentype/ebgaramond/EBGaramond12-Regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on lista1.pdf (10 pages, 4060753 bytes).
 
-PDF statistics: 90 PDF objects out of 1000 (max. 8388607)
- 23 compressed objects within 1 object stream
- 13 named destinations out of 1000 (max. 131072)
+PDF statistics: 140 PDF objects out of 1000 (max. 8388607)
+ 39 compressed objects within 1 object stream
+ 23 named destinations out of 1000 (max. 131072)
  64 words of extra memory for PDF output out of 10000 (max. 100000000)
 

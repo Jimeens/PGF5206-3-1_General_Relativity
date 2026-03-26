@@ -1,0 +1,24 @@
+The gravitational field inside the spherical shell is zero, since there is no mass enclosed by any Gaussian surface inside the shell. Therefore, we have:
+\begin{answer}
+    \vb{g}(\vb{r}) = \vb{0}, \quad \text{for } r < R
+\end{answer}
+
+To find the gravitational field outside the spherical shell, we can use Gauss's law again. The mass enclosed by a Gaussian surface of radius $r$ (where $r > R$) is given by:
+\begin{equation*}
+    M_{\text{enclosed}} = \int\limits_{S} \sigma(\vb{r}') \dd[2]{\vb{r}'} = \sigma \int_{0}^{\pi} \int_{0}^{2\pi} R^{2} \sin\theta' \dd{\phi'} \dd{\theta'} = 4\pi R^{2} \sigma
+\end{equation*}
+
+We can use again that:
+\begin{equation*}
+    \oint\limits_{S} \vb{g}(\vb{r}') \cdot \dd[2]{\vb{r}'} = -4\pi G M_{\text{enclosed}}
+\end{equation*}
+
+Since the gravitational field is radial and has the same magnitude at every point on the Gaussian surface, we can simplify this to:
+\begin{equation*}
+    g(r) 4\pi r^{2} = -4\pi G M_{\text{enclosed}} = -4\pi G \qty(4\pi R^{2} \sigma)
+\end{equation*}
+
+This gives us the gravitational field outside the spherical shell:
+\begin{answer}
+    \vb{g}(\vb{r}) = -\frac{4\pi G R^{2} \sigma}{r^{2}} \hat{\vb{r}}, \quad \text{for } r > R
+\end{answer}    
