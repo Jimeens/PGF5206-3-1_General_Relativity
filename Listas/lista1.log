@@ -1,8 +1,8 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2025.10.2)  2 MAR 2026 09:17
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2025.10.2)  26 MAR 2026 09:48
  system commands enabled.
  file:line:error style messages enabled.
-**/home/jimeens/PGF5206-3-1_General_Relativity/Listas/lista1.tex
-(/home/jimeens/PGF5206-3-1_General_Relativity/Listas/lista1.tex
+**/home/jimeens/PGF5206-3-1_General_Relativity-1/Listas/lista1.tex
+(/home/jimeens/PGF5206-3-1_General_Relativity-1/Listas/lista1.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
 Lua module: luaotfload 2023-08-31 3.26 Lua based OpenType font support
@@ -2837,17 +2837,26 @@ File: Figures/vanilla.png Graphic file (type png)
 <use Figures/vanilla.png>
 Package luatex.def Info: Figures/vanilla.png  used on input line 53.
 (luatex.def)             Requested size: 71.12491pt x 71.13188pt.
- [4] (./Solutions/Solutions1/ex5.tex) 
-AED: pageslts setting LastPage 
+ [4] (./Solutions/Solutions1/ex5.tex)
 File: Figures/Impression, soleil levant - Claude Monet.png Graphic file (type png)
 <use Figures/Impression, soleil levant - Claude Monet.png>
-Package luatex.def Info: Figures/Impression, soleil levant - Claude Monet.png  used on input line 65.
+Package luatex.def Info: Figures/Impression, soleil levant - Claude Monet.png  used on input line 63.
 (luatex.def)             Requested size: 1088.4324pt x 845.04684pt.
 File: Figures/vanilla.png Graphic file (type png)
 <use Figures/vanilla.png>
-Package luatex.def Info: Figures/vanilla.png  used on input line 65.
+Package luatex.def Info: Figures/vanilla.png  used on input line 63.
 (luatex.def)             Requested size: 71.12491pt x 71.13188pt.
-[5]
+ [5] (./Solutions/Solutions1/ex6.tex) 
+AED: pageslts setting LastPage 
+File: Figures/Impression, soleil levant - Claude Monet.png Graphic file (type png)
+<use Figures/Impression, soleil levant - Claude Monet.png>
+Package luatex.def Info: Figures/Impression, soleil levant - Claude Monet.png  used on input line 75.
+(luatex.def)             Requested size: 1088.4324pt x 845.04684pt.
+File: Figures/vanilla.png Graphic file (type png)
+<use Figures/vanilla.png>
+Package luatex.def Info: Figures/vanilla.png  used on input line 75.
+(luatex.def)             Requested size: 71.12491pt x 71.13188pt.
+[6]
 \c@pagesLTS.arabic.1.local.count=\count580
  
 AED: pageslts setting VeryLastPage via AfterLastShipout 
@@ -2855,7 +2864,7 @@ AED: pageslts setting VeryLastPage via AfterLastShipout
 AED: pageslts setting LastPages via AfterLastShipout 
 
 
-Package pageslts Info: Total number of pages is even.
+Package pageslts Info: Total number of pages is odd.
 
 
 (./lista1.aux)
@@ -2869,19 +2878,19 @@ Package logreq Info: Writing requests to 'lista1.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 54468 strings out of 476553
+ 54489 strings out of 476553
  100000,2848258 words of node,token memory allocated
  1282 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 5 glue, 4 kern, 1 glyph, 14 attribute, 200 glue_spec, 9 attribute_list, 3 write nodes
-   avail lists: 1:10,2:370,3:91,4:57,5:102,6:39,7:733,8:1,9:309,10:2,11:48
- 75050 multiletter control sequences out of 65536+600000
+   avail lists: 1:10,2:379,3:91,4:54,5:102,6:39,7:900,8:17,9:309,10:7,11:68
+ 75057 multiletter control sequences out of 65536+600000
  65 fonts using 13759999 bytes
- 167i,12n,152p,1202b,1644s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/opentype/public/ebgaramond/EBGaramond-Bold.otf></usr/share/fonts/opentype/ebgaramond/EBGaramond12-Regular.otf>
-Output written on lista1.pdf (6 pages, 3960440 bytes).
+ 167i,12n,152p,1204b,1644s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/opentype/public/ebgaramond/EBGaramond-Bold.otf></usr/share/fonts/opentype/ebgaramond/EBGaramond12-Regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on lista1.pdf (7 pages, 3984003 bytes).
 
-PDF statistics: 74 PDF objects out of 1000 (max. 8388607)
- 19 compressed objects within 1 object stream
- 11 named destinations out of 1000 (max. 131072)
- 56 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 90 PDF objects out of 1000 (max. 8388607)
+ 23 compressed objects within 1 object stream
+ 13 named destinations out of 1000 (max. 131072)
+ 64 words of extra memory for PDF output out of 10000 (max. 100000000)
 
