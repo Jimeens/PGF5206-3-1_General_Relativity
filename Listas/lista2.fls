@@ -1,7 +1,7 @@
 PWD /home/jimeens/PGF5206-3-1_General_Relativity-1/Listas
 INPUT /var/lib/texmf/web2c/luahbtex/lualatex.fmt
-INPUT /home/jimeens/PGF5206-3-1_General_Relativity-1/Listas/lista1.tex
-OUTPUT lista1.log
+INPUT /home/jimeens/PGF5206-3-1_General_Relativity-1/Listas/lista2.tex
+OUTPUT lista2.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/tex-ini-files/lualatexquotejobname.lua
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ltluatex.lua
 INPUT /usr/share/texlive/texmf-dist/tex/luatex/luaotfload/luaotfload-main.lua
@@ -455,8 +455,8 @@ INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/graphdrawing/lua/pgf/gd/tree
 INPUT /usr/share/texlive/texmf-dist/tex/latex/tikz-feynman/tikzfeynman.keys.code.tex
 INPUT /usr/share/texlive/texmf-dist/tex/latex/pgfornament/pgfornament.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/pgfornament/pgflibraryvectorian.code.tex
-INPUT ./lista1.aux
-OUTPUT lista1.aux
+INPUT ./lista2.aux
+OUTPUT lista2.aux
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/cbfonts-fd/lgrcmr.fd
 INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -464,10 +464,10 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/microtype/mt-EBGaramond.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/portuguese.lbx
-OUTPUT lista1.bcf
-INPUT ./lista1.bbl
-INPUT ./lista1.bbl
-INPUT ./lista1.bbl
+OUTPUT lista2.bcf
+INPUT ./lista2.bbl
+INPUT ./lista2.bbl
+INPUT ./lista2.bbl
 INPUT /home/jimeens/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/ebgaramond08-regular.luc
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
@@ -499,58 +499,66 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
 INPUT ./Figures/Impression, soleil levant - Claude Monet.png
 INPUT ./Figures/Impression, soleil levant - Claude Monet.png
 INPUT ./Figures/Impression, soleil levant - Claude Monet.png
-OUTPUT lista1.pdf
+OUTPUT lista2.pdf
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
-INPUT ./Solutions/Solutions1/ex1.tex
+INPUT ./Solutions/Solutions2/ex1.tex
 INPUT ./Figures/Impression, soleil levant - Claude Monet.png
 INPUT ./Figures/vanilla.png
 INPUT ./Figures/vanilla.png
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgfornament/vectorian/vectorian80.pgf
+INPUT ./Solutions/Solutions2/ex2.tex
 INPUT ./Figures/Impression, soleil levant - Claude Monet.png
 INPUT ./Figures/vanilla.png
-INPUT ./Solutions/Solutions1/ex2.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgfornament/vectorian/vectorian80.pgf
+INPUT ./Solutions/Solutions2/ex3.tex
 INPUT ./Figures/Impression, soleil levant - Claude Monet.png
 INPUT ./Figures/vanilla.png
-INPUT ./Solutions/Solutions1/ex3.tex
+INPUT ./Solutions/Solutions2/ex4.tex
 INPUT ./Figures/Impression, soleil levant - Claude Monet.png
 INPUT ./Figures/vanilla.png
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgfornament/vectorian/vectorian80.pgf
+INPUT ./Solutions/Solutions2/ex5.tex
 INPUT ./Figures/Impression, soleil levant - Claude Monet.png
 INPUT ./Figures/vanilla.png
-INPUT ./Solutions/Solutions1/ex4.tex
+INPUT ./Solutions/Solutions2/ex6.tex
 INPUT ./Figures/Impression, soleil levant - Claude Monet.png
 INPUT ./Figures/vanilla.png
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgfornament/vectorian/vectorian80.pgf
+INPUT ./Solutions/Solutions2/ex7.tex
 INPUT ./Figures/Impression, soleil levant - Claude Monet.png
 INPUT ./Figures/vanilla.png
-INPUT ./Solutions/Solutions1/ex5.tex
+INPUT ./Solutions/Solutions2/ex8.tex
 INPUT ./Figures/Impression, soleil levant - Claude Monet.png
 INPUT ./Figures/vanilla.png
+INPUT ./Solutions/Solutions2/ex9.tex
 INPUT ./Figures/Impression, soleil levant - Claude Monet.png
 INPUT ./Figures/vanilla.png
+INPUT ./Solutions/Solutions2/ex10.tex
 INPUT ./Figures/Impression, soleil levant - Claude Monet.png
 INPUT ./Figures/vanilla.png
+INPUT ./Solutions/Solutions2/ex11.tex
 INPUT ./Figures/Impression, soleil levant - Claude Monet.png
 INPUT ./Figures/vanilla.png
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgfornament/vectorian/vectorian80.pgf
+INPUT ./Solutions/Solutions2/ex12.tex
 INPUT ./Figures/Impression, soleil levant - Claude Monet.png
 INPUT ./Figures/vanilla.png
-INPUT ./Solutions/Solutions1/ex6.tex
+INPUT ./Solutions/Solutions2/ex13.tex
 INPUT ./Figures/Impression, soleil levant - Claude Monet.png
 INPUT ./Figures/vanilla.png
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgfornament/vectorian/vectorian80.pgf
+INPUT ./Solutions/Solutions2/ex14.tex
 INPUT ./Figures/Impression, soleil levant - Claude Monet.png
 INPUT ./Figures/vanilla.png
-INPUT ./lista1.aux
-INPUT ./lista1.run.xml
-OUTPUT lista1.run.xml
+INPUT ./Solutions/Solutions2/ex15.tex
+INPUT ./Figures/Impression, soleil levant - Claude Monet.png
+INPUT ./Figures/vanilla.png
+INPUT ./Solutions/Solutions2/ex16.tex
+INPUT ./Figures/Impression, soleil levant - Claude Monet.png
+INPUT ./Figures/vanilla.png
+INPUT ./lista2.aux
+INPUT ./lista2.run.xml
+OUTPUT lista2.run.xml
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb

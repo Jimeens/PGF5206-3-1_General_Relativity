@@ -1,0 +1,151 @@
+By the Question 04, we know that we can write $U(r,\theta)$ in terms of the Legendre polynomials, therefore, we can express $U(\theta) = k\cos(3\theta)$ as a linear combination of some Legendre polynomials. Before we do that, the $\cos(3\theta)$ can be expanded as:
+\begin{equation*}
+    \cos(3\theta) = -3\cos\theta + 4\cos^{3}\theta
+\end{equation*}
+
+This means that we need Legendre polynomials of 1st and 3rd order in $\cos\theta$. The first few Legendre polynomials are:
+\begin{align*}
+    P_{0}(\cos\theta) &= 1 \\
+    P_{1}(\cos\theta) &= \cos\theta \\
+    P_{2}(\cos\theta) &= \frac{1}{2}(3\cos^{2}\theta - 1) \\
+    P_{3}(\cos\theta) &= \frac{1}{2}(5\cos^{3}\theta - 3\cos\theta)
+\end{align*}
+
+In these cases, we can note that only $P_{1}(\cos\theta)$ and $P_{3}(\cos\theta)$ are needed to express $\cos(3\theta)$, therefore, we can write:
+\begin{equation*}
+    \cos(3\theta) = AP_{1}(\cos\theta) + BP_{3}(\cos\theta)
+\end{equation*}
+where $A$ and $B$ are constants to be determined. Substituting the expressions for $P_{1}(\cos\theta)$ and $P_{3}(\cos\theta)$, we have:
+\begin{align*}
+    \cos(3\theta) &\eq A\cos\theta + B\qty[\frac{1}{2}(5\cos^{3}\theta - 3\cos\theta)] \\
+    &\eq \qty(A - \frac{3}{2}B)\cos\theta + \frac{5}{2}B\cos^{3}\theta
+\end{align*}
+
+Comparing the coefficients of the two expressions for $\cos(3\theta)$, we obtain:
+\begin{equation*}
+    \dfrac{5}{2}B = 4 \implies B = \frac{8}{5} \qquad \text{and} \qquad A - \frac{3}{2}B = -3 \implies A = -\frac{12}{5}
+\end{equation*}
+
+Thus, we have:
+\begin{equation*}
+    U(\theta) = \dfrac{2k}{5} \qty[-6P_{1}(\cos\theta) + 4P_{3}(\cos\theta)]
+\end{equation*}
+
+Knowing that $U(\theta)$ depends only on $P_{1}(\cos\theta)$ and $P_{3}(\cos\theta)$, the potential inside the sphere will be expressed only for $\ell = 1$ and $\ell = 3$, because of the orthogonality of the Legendre polynomials. Therefore, we can write:
+\begin{equation*}
+    U_{\text{inside}}(r, \theta) = A_{1} r P_{1}(\cos\theta) + A_{3} r^{3} P_{3}(\cos\theta)
+\end{equation*}
+where $A_{\ell}$ is given by \eqref{eq:Al}. Calculating $A_{1}$:
+\begin{align*}
+    A_{1} &\eq \dfrac{3}{2 R} \int_{-1}^{1} U(\theta) P_{1}(\cos\theta)\dd{\cos\theta} \\
+    &\eq \dfrac{3}{2 R} \int_{-1}^{1} \dfrac{2k}{5} \qty[-6P_{1}(\cos\theta) + 4P_{3}(\cos\theta)] P_{1}(\cos\theta)\dd{\cos\theta} \\
+    &\eq -\dfrac{36k}{10 R} \int_{-1}^{1} P_{1}^{2}(\cos\theta)\dd{\cos\theta} \\ 
+\end{align*}
+
+Using that:
+\begin{equation*}
+    \int_{-1}^{1} P_{\ell}^{2}(\cos\theta)\dd{\cos\theta} = \frac{2}{2\ell + 1}
+\end{equation*}
+we have:
+\begin{equation*}
+    A_{1} = -\dfrac{36k}{10 R} \cdot \dfrac{2}{3} = -\dfrac{12k}{5 R}
+\end{equation*}
+
+For $A_{3}$, we have:
+\begin{align*}
+    A_{3} &\eq \dfrac{7}{2 R^{3}} \int_{-1}^{1} U(\theta) P_{3}(\cos\theta)\dd{\cos\theta} \\
+    &\eq \dfrac{7}{2 R^{3}} \int_{-1}^{1} \dfrac{2k}{5} \qty[-6P_{1}(\cos\theta) + 4P_{3}(\cos\theta)] P_{3}(\cos\theta)\dd{\cos\theta} \\
+    &\eq \dfrac{56k}{10 R^{3}} \int_{-1}^{1} P_{3}^{2}(\cos\theta)\dd{\cos\theta} \\
+    &\eq \dfrac{56k}{10 R^{3}} \cdot \dfrac{2}{7} = \dfrac{8k}{5 R^{3}}
+\end{align*}
+
+Thus, the potential inside the sphere can be expressed as:
+\begin{align*}
+    U_{\text{inside}}(r, \theta) &\eq -\dfrac{12k}{5 R} r P_{1}(\cos\theta) + \dfrac{8k}{5 R^{3}} r^{3} P_{3}(\cos\theta) \\
+    &\eq -\dfrac{12k}{5 R} r \cos\theta + \dfrac{8k}{5 R^{3}} r^{3} \cdot \dfrac{1}{2}(5\cos^{3}\theta - 3\cos\theta) \\
+    &\eq \dfrac{4k}{5 R} r \cos\theta \qty[-3 + \dfrac{r^{2}}{2R^{2}} (5\cos^{2}\theta - 3)]
+\end{align*}
+
+Concluding that the potential inside the sphere is given by:
+\begin{answer}
+    U_{\text{inside}}(r, \theta) = \dfrac{4k}{5 R} r \cos\theta \qty[-3 + \dfrac{r^{2}}{2R^{2}} (5\cos^{2}\theta - 3)]
+\end{answer}
+
+Outside the sphere, we can use the general solution to the Laplace equation to determine the potential. In this case, the solution must vanish at infinity, which implies that $A_{\ell} = 0$ for all $\ell$. Therefore, the potential outside the sphere can be written as:
+\begin{equation*}
+    U_{\text{outside}}(r, \theta) = \sum_{\ell=0}^{\infty} \frac{B_{\ell}}{r^{\ell+1}} P_{\ell}(\cos\theta)
+\end{equation*}
+
+On the surface of the sphere, we have $U(R, \theta) = U(\theta)$, which gives us:
+\begin{equation*}
+    U(\theta) = \sum_{\ell=0}^{\infty} \frac{B_{\ell}}{R^{\ell+1}} P_{\ell}(\cos\theta)
+\end{equation*}
+
+Multiplying both sides by $P_{\ell'}(\cos\theta)$ and integrating over $\dd{\cos\theta}$ from $-1$ to $1$:
+\begin{align*}
+    \int_{-1}^{1} U(\theta) P_{\ell'}(\cos\theta)\dd{\cos\theta} &\eq \sum_{\ell=0}^{\infty} \frac{B_{\ell}}{R^{\ell+1}} \int_{-1}^{1} P_{\ell}(\cos\theta) P_{\ell'}(\cos\theta)\dd{\cos\theta} \\
+    &\eq \dfrac{2B_{\ell'}}{(2\ell' + 1) R^{\ell'+1}}
+\end{align*}
+implying that:
+\begin{equation*}
+    B_{\ell} = \frac{2\ell + 1}{2} R^{\ell+1} \int_{-1}^{1} U(\theta) P_{\ell}(\cos\theta)\dd{\cos\theta}
+\end{equation*}
+
+By ortogonality of the Legendre polynomials, only $B_{1}$ and $B_{3}$ will be non-zero, therefore:
+\begin{align*}
+    B_{1} &\eq \dfrac{3}{2} R^{2} \int_{-1}^{1} U(\theta) P_{1}(\cos\theta)\dd{\cos\theta} \\
+    &\eq \dfrac{3}{2} R^{2} \int_{-1}^{1} \dfrac{2k}{5} \qty[-6P_{1}(\cos\theta) + 4P_{3}(\cos\theta)] P_{1}(\cos\theta)\dd{\cos\theta} \\
+    &\eq -\dfrac{36k}{10} R^{2} \int_{-1}^{1} P_{1}^{2}(\cos\theta)\dd{\cos\theta} \\
+    &\eq -\dfrac{36k}{10} R^{2} \cdot \dfrac{2}{3} \\
+    &\eq -\dfrac{12k}{5} R^{2}
+\end{align*}
+and
+
+\begin{align*}
+    B_{3} &\eq \dfrac{7}{2} R^{4} \int_{-1}^{1} U(\theta) P_{3}(\cos\theta)\dd{\cos\theta} \\
+    &\eq \dfrac{7}{2} R^{4} \int_{-1}^{1} \dfrac{2k}{5} \qty[-6P_{1}(\cos\theta) + 4P_{3}(\cos\theta)] P_{3}(\cos\theta)\dd{\cos\theta} \\
+    &\eq \dfrac{56k}{10} R^{4} \int_{-1}^{1} P_{3}^{2}(\cos\theta)\dd{\cos\theta} \\
+    &\eq \dfrac{56k}{10} R^{4} \cdot \dfrac{2}{7} \\
+    &\eq \dfrac{8k}{5} R^{4}
+\end{align*}
+
+Thus, the potential outside the sphere can be expressed as:
+\begin{align*}
+    U_{\text{outside}}(r, \theta) &\eq -\dfrac{12k}{5} \frac{R^{2}}{r^{2}} P_{1}(\cos\theta) + \dfrac{8k}{5} \frac{R^{4}}{r^{4}} P_{3}(\cos\theta) \\
+    &\eq -\dfrac{12k}{5} \frac{R^{2}}{r^{2}} \cos\theta + \dfrac{8k}{5} \frac{R^{4}}{r^{4}} \cdot \dfrac{1}{2}(5\cos^{3}\theta - 3\cos\theta) \\
+    &\eq \dfrac{4k}{5} \frac{R^{2}}{r^{2}} \cos\theta \qty[-3 + \dfrac{R^{2}}{2r^{2}} (5\cos^{2}\theta - 3)]
+\end{align*}
+
+Concluding that the potential outside the sphere is given by:
+\begin{answer}
+    U_{\text{outside}}(r, \theta) = \dfrac{4k}{5} \frac{R^{2}}{r^{2}} \cos\theta \qty[-3 + \dfrac{R^{2}}{2r^{2}} (5\cos^{2}\theta - 3)]
+\end{answer}
+
+Because there is no mass inside or outside the sphere, the surface mass density $\sigma(\theta)$ can be obtained from the discontinuity of the normal component of the gravitational field across the surface of the sphere:
+\begin{equation*}
+    g_{\text{outside}}^{(r)} - g_{\text{inside}}^{(r)} = -4\pi G \sigma(\theta) \implies \sigma(\theta) = -\frac{1}{4\pi G} \qty[\pdv{U_{\text{outside}}}{r} - \pdv{U_{\text{inside}}}{r}]_{r=R}
+\end{equation*}
+
+For the derivative of $U_{\text{inside}}$ with respect to $r$, we have:
+\begin{align*}
+    \pdv{U_{\text{inside}}}{r} &\eq -\dfrac{12k}{5R} P_{1}(\cos\theta) + \dfrac{24k}{5R^{3}} r^{2} P_{3}(\cos\theta)
+\end{align*}
+and for the derivative of $U_{\text{outside}}$ with respect to $r$, we have:
+\begin{align*}
+    \pdv{U_{\text{outside}}}{r} &\eq \dfrac{24k}{5} \frac{R^{2}}{r^{3}} P_{1}(\cos\theta) - \dfrac{32k}{5} \frac{R^{4}}{r^{5}} P_{3}(\cos\theta)
+\end{align*}
+
+Thus:
+\begin{align*}
+    \qty[\pdv{U_{\text{outside}}}{r} - \pdv{U_{\text{inside}}}{r}]_{r=R} &\eq \dfrac{12k}{5R} P_{1}(\cos\theta) - \dfrac{8k}{5R} P_{3}(\cos\theta) \\
+    &\eq \dfrac{4k}{5R} [3P_{1}(\cos\theta) - 2P_{3}(\cos\theta)] \\
+    &\eq \dfrac{4k}{5R} \qty[3\cos\theta - (5\cos^{3}\theta - 3\cos\theta)] \\
+    &\eq \dfrac{4k}{5R} (6\cos\theta - 5\cos^{3}\theta)
+\end{align*}
+
+Concluding that the surface mass density on the sphere is given by:
+\begin{answer}
+    \sigma(\theta) = -\dfrac{k}{5\pi G R} (6\cos\theta - 5\cos^{3}\theta)
+\end{answer}
+
+\endex

@@ -1,0 +1,249 @@
+\RequirePackage{pdfmanagement-testphase} % tranparent package doesn't work without this
+\DeclareDocumentMetadata{} % and this
+\documentclass[a4paper, 11pt, oneside]{impression}
+
+\hwnumber{2} % Homework number in the cover page
+\title{General Relativity - PGF5206} % Title
+\subtitle{Special Relativity} % Subtitle
+\author{Lucas R. Ximenes} % Author
+\extra{11917239} % Extra information
+
+\begin{document}
+
+\maketitle
+
+\chapter{Lorentz transformations in terms of rapidity}\label{quest: one}
+
+\begin{exercise}{}
+    The rapidity $\phi$ of a particle moving with velocity $u$ is defined by $\tanh\phi = u$. Prove that the non-trivial equations of the Lorentz transformation can be written as
+    \begin{align*}
+        x' &= x\cosh\phi - ct\sinh\phi \\
+        ct' &= -x\sinh\phi + ct\cosh\phi
+    \end{align*}
+    and use this to verify the following group property (transitivity) of the Lorentz transformation: The resultant of two Lorentz transformations with parameters $v_{1}$ and $v_{2}$, respectively, is another Lorentz transformation with parameter given by $v = \dfrac{v_{1} + v_{2}}{1 + \frac{v_{1}v_{2}}{c^{2}}}$.
+\end{exercise}
+
+\input{Solutions/Solutions2/ex1}
+
+\newpage
+
+\chapter{Some particle properties}\label{quest: two}
+
+\begin{exercise}{}
+    A particle of rest mass $m$ and $4$-momentum $p$ is examined by an observer with $4$-velocity $u$. Show that (with $c = 1$ and $\eta_{\mu\nu}=\mathrm{diag}(-1, 1, 1, 1)$)
+    \begin{itemize}
+        \item The energy she measures is $E = -p\cdot u$;
+        \item The rest mass she attributes to the particle is $m^{2} = - p\cdot p$;
+        \item The momentum she measures has magnitude $\abs{\vb{p}}^{2} = (p\cdot u)^{2} + p\cdot p$;
+        \item  The ordinary velocity she measures has magnitude
+        \begin{equation*}
+            \abs{\vb{v}} = 1 + \dfrac{p\cdot p}{(p\cdot u)^{2}}
+        \end{equation*}
+        \item a $4$-vector $v$, whose components in the observer's Lorentz frame are
+        \begin{equation*}
+            v^{0} = 0, \quad v^{j} - \dv{x^{j}}{t}\bigg|_{\text{particle}} = \text{ordinary velocity}
+        \end{equation*}
+        is given by $v = -u - \dfrac{p}{p\cdot u}$.
+    \end{itemize}
+\end{exercise}
+
+\input{Solutions/Solutions2/ex2}
+
+\newpage
+
+\chapter{The little group of \texorpdfstring{$p$}{}}\label{quest: three}
+
+\begin{exercise}{}
+    Suppose in some inertial frame $S$ a photon has $4$-momentum components (with $c = 1$ and $\eta_{\mu\nu}=\mathrm{diag}(-1, 1, 1, 1)$)
+    \begin{equation*}
+        p^{0} = p^{x} = 0E, \quad p^{y} = p^{z} = E
+    \end{equation*}
+    There is a special  class of Lorentz transformations, called the ``little group of  $p$'', which leaves the components of $p$ unchanged, for instance a pure rotation through an angle $\alpha$ in the $y-z$ plane,
+    \begin{equation*}
+        \begin{pmatrix}
+            1 & 0 & 0 & 0 \\
+            0 & 1 & 0 & 0 \\
+            0 & 0 & \cos\alpha & -\sin\alpha \\
+            0 & 0 & \sin\alpha & \cos\alpha
+        \end{pmatrix}
+        \begin{pmatrix}
+            E \\
+            E \\
+            0 \\
+            0
+        \end{pmatrix} = 
+        \begin{pmatrix}
+            E \\
+            E \\
+            0 \\
+            0
+        \end{pmatrix}
+    \end{equation*}
+    is such a transformation. Find a sequence of pure boosts and pure rotations whose product is \textit{not} a pure rotation in the $y-z$ plane, but \textit{is} in the little group of $p$.
+\end{exercise}
+
+\input{Solutions/Solutions2/ex3}
+
+\newpage
+
+\chapter{Rotation operators and boosts}\label{quest: four}
+
+\begin{exercise}{}
+    Let $J_{x}$, $J_{y}$ and $J_{z}$ be infinitesimal rotation operators defined so that $1 + iJ_{j}\theta/2$ is a rotation by a small angle $\theta$ around the $j$-axis. Let $K_{x}$, $K_{y}$ and $K_{z}$ be infinitesimal boost operators so thaat $1 + iK_{j}v/2$ is a boost by a small velocity $v$ in the $j$-direction. Show that the following relationships, and all their cyclic permutations, are true:
+    \begin{align*}
+        [J_{x}, J_{y}] &= 2iJ_{z} \\
+        [J_{x}, K_{y}] &= 2iK_{z} \\
+        [K_{x}, K_{y}] &= -2iJ_{z}
+    \end{align*}
+    Find a representation of the Lorentz group in terms of Pauli spin matrices $\sigma_{x}$, $\sigma_{y}$ and $\sigma_{z}$ and the unit matrix.
+\end{exercise}
+
+\input{Solutions/Solutions2/ex4}
+
+\newpage
+
+\chapter{Pure boosts}\label{quest: five}
+
+\begin{exercise}{}
+    What is the least number of pure boosts which generate an arbitrary Lorentz transformation?
+\end{exercise}
+
+\input{Solutions/Solutions2/ex5}
+
+\newpage
+
+\chapter{Photon vs. a stationary electron}\label{quest: six}
+
+\begin{exercise}{}
+    A photon of wavelength $\lambda$ hits a stationary electron (mass $m_{e}$) and comes off with wavelength $\lambda'$ at an angle $\theta$. Derive the expression:
+    \begin{equation*}
+        \lambda' - \lambda = \dfrac{h}{m_{e}c}(1 - \cos\theta)
+    \end{equation*}
+\end{exercise}
+
+\input{Solutions/Solutions2/ex6}
+
+\newpage
+
+\chapter{Free electron property}\label{quest: seven}
+
+\begin{exercise}{}
+    Show that it is impossible for an isolated free electron to emit a photon.
+\end{exercise}
+
+\input{Solutions/Solutions2/ex7.tex}
+
+\newpage
+
+\chapter{\texorpdfstring{$A \to B + C$}{} process}\label{quest: eight}
+
+\begin{exercise}{}
+    Consider the reaction $A \to B + C$ (with particle masses $m_{A}$, $m_{B}$ and $m_{C}$). For simplicity consider units such that $c=1$.
+    \begin{itemize}
+        \item If $A$ is at rest in the lab frame, show that in the lab frame particle $B$ has energy 
+        \begin{equation*}
+            E_{B} = \dfrac{m_{A}^{2} + m_{B}^{2} - m_{C}^{2}}{2m_{A}}
+        \end{equation*}
+        \item An atom of mass $M$ at rest decays to a state of rest energy $M - \delta$ by emitting a photon of energy $h\nu$. Show that $h\nu < \delta$;
+        \item If $A$ decays while moving in the lab frame, find the relation between the angle at which $B$ comes off, and the energies of $A$ and $B$.
+    \end{itemize}
+\end{exercise}
+
+\input{Solutions/Solutions2/ex8.tex}
+
+\newpage
+
+\chapter{Consistency of special relativity}\label{quest: nine}
+
+\begin{exercise}{}
+    A new force field $F^{\mu}(x^{\nu})$ is discovered which induces a $4$-acceleration $a^{\mu} = \dv{u^{\mu}}{\tau} = m^{-1}F^{\mu}(x^{\nu})$ on a particle of mass $m$ at position $x^{\nu}$. Notice that $F^{\mu}$ dos not depend on $u^{\nu}$. Show that this force is not consistent with special relativity.
+\end{exercise}
+
+\input{Solutions/Solutions2/ex9.tex}
+
+\newpage
+
+\chapter{Spacelike and timelike intervals}\label{quest: ten}
+
+\begin{exercise}{}
+    If two events are separated by a spaceelike interval, show that
+    \begin{itemize}
+        \item There exists a Lorentz fram in which they are simultaneeus;
+        \item In no Lorentz frame do they occur at the same point.
+    \end{itemize}
+    On the other hand, if two events are separeted by a timelike interval, show that
+    \begin{itemize}
+        \item There exists a frame in which they happen at the same point;
+        \item In no Lorentz frame are they simultaneous.
+    \end{itemize}
+\end{exercise}
+
+\input{Solutions/Solutions2/ex10.tex}
+
+\newpage
+
+\chapter{Tests with tensors}\label{quest: eleven}
+
+\begin{exercise}{}
+    You are given a tensor $k^{\alpha\beta}$. How can you test whether it is a direct product of two vectors $k^{\alpha\beta} = A^{\alpha}B^{\beta}$? Can you express the test in coordinate-free language?
+\end{exercise}
+
+\input{Solutions/Solutions2/ex11.tex}
+
+\newpage
+
+\chapter{Second-rank tensors}\label{quest: twelve}
+
+\begin{exercise}{}
+    Prove that the general second-rank tensor in $n$-dimensions cannot be represented as a simple direct product of two vectors, but can be expressed as a sum over many such products.
+\end{exercise}
+
+\input{Solutions/Solutions2/ex12.tex}
+
+\newpage
+
+\chapter{A two index object}\label{quest: thirteen}
+
+\begin{exercise}{}
+    A two index object $X^{\mu\nu}$ is defined by the ``direct sum'' of two vectors $X^{\mu\nu} = A^{\mu} + B^{\nu}$. Is $X^{\mu\nu}$ a tensor? Is there a transformation law to take $X$ to a new coordinate system, i.e., to obtain $X^{\hat{\mu}\hat{\nu}}$ from $X^{\mu\nu}$?
+\end{exercise}
+
+\input{Solutions/Solutions2/ex13.tex}
+
+\newpage
+
+\chapter{Antisymmetric second-rank tensors}\label{quest: fourteen}
+
+\begin{exercise}{}
+    Show that a sscond-rank tensor $F_{\mu\nu}$ which is antisymmetric in one coordinate frame is antisymmetric in all frames. Show that the contravariant components are also antisymmetric. Show that symmetry is also coordinate invariant.
+\end{exercise}
+
+\input{Solutions/Solutions2/ex14.tex}
+
+\newpage
+
+\chapter{High-rank tensors}\label{quest: fiftheen}
+
+\begin{exercise}{}
+    In a $n$-dimensional metric space, how many independent components are there for a $r$-rank tensor $T^{\alpha\beta\cdots}$ with no symmetries? If the tensor is symmetric on $s$ of its indices, how many independent components are there? If the tensor is antisymmetric on $a$ of its indices, how many independent components are there?
+\end{exercise}
+
+\input{Solutions/Solutions2/ex15.tex}
+
+\newpage
+
+\chapter{Antisymmetric tensors}\label{quest: sixteen}
+
+\begin{exercise}{}
+    Show that if the antisymmetric tensor $p^{\alpha\beta}$ is a bivector, $p^{\alpha\beta} = A^{[\alpha} B^{\beta]}$, then
+    \begin{equation*}
+        p^{\alpha\beta}p^{\gamma\delta} + p^{\alpha\gamma}p^{\delta\beta} + p^{\alpha\delta}p^{\beta\gamma} = 0
+    \end{equation*}
+    Recall that $V^{[a_{1}a_{2}]} = \dfrac{1}{2}(V^{a_{1}a_{2}} - V^{a_{2}a_{1}})$.
+\end{exercise}
+
+\input{Solutions/Solutions2/ex16.tex}
+
+% \makefinal
+
+\end{document}

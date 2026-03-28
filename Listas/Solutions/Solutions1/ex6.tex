@@ -1,0 +1,52 @@
+Knowing the form of $\sigma(\theta)$, it can be written as $\sigma(\theta) = kP_{1}(\cos\theta)$. The general solutions of Laplace's equation give us:
+\begin{equation*}
+    U_{\text{inside}}(r, \theta) = \sum_{\ell=0}^{\infty} A_{\ell} r^{\ell} P_{\ell}(\cos\theta) \qquad \text{and} \qquad U_{\text{outside}}(r, \theta) = \sum_{\ell=0}^{\infty} \frac{B_{\ell}}{r^{\ell+1}} P_{\ell}(\cos\theta)
+\end{equation*}
+
+By the discontinuity of the normal component of the gravitational field across the shell, we have:
+\begin{align*}
+    \sigma(\theta) &\eq \frac{1}{4\pi G} \qty[\pdv{U_{\text{outside}}}{r} - \pdv{U_{\text{inside}}}{r}]_{r=R} \\
+    &\eq \frac{1}{4\pi G} \qty[\sum_{\ell=0}^{\infty} A_{\ell} \ell R^{\ell-1} P_{\ell}(\cos\theta) + \sum_{\ell=0}^{\infty} (\ell + 1) \frac{B_{\ell}}{R^{\ell+2}} P_{\ell}(\cos\theta)]
+\end{align*}
+
+If $\sigma(\theta)$ depends only on $P_{1}(\cos\theta)$, then all terms in the above expression must vanish except for the one with $\ell = 1$, therefore:
+\begin{align*}
+    \sigma(\theta) &\eq \frac{1}{4\pi G} \qty[A_{1} R^{0} P_{1}(\cos\theta) + \frac{2B_{1}}{R^{3}} P_{1}(\cos\theta)] \\
+    &\eq \frac{1}{4\pi G} \qty[A_{1} + \frac{2B_{1}}{R^{3}}] P_{1}(\cos\theta)
+\end{align*}
+
+We know that $U_{\text{inside}}(R, \theta) = U_{\text{outside}}(R, \theta)$, which implies that $A_{1} R P_{1}(\cos\theta) = \frac{B_{1}}{R^{2}} P_{1}(\cos\theta)$, therefore $B_{1} = A_{1} R^{3}$. Substituting this result in the above expression for $\sigma(\theta)$, we have:
+\begin{align*}
+    \sigma(\theta) &\eq \frac{1}{4\pi G} \qty[A_{1} + 2 A_{1}] P_{1}(\cos\theta) \\
+    &\eq \frac{3 A_{1}}{4\pi G} P_{1}(\cos\theta)
+\end{align*}
+
+Thus:
+\begin{equation*}
+    \dfrac{3 A_{1}}{4\pi G} = k \implies A_{1} = \dfrac{4\pi G}{3} k \implies B_{1} = \dfrac{4\pi G}{3} k R^{3}
+\end{equation*}
+
+Therefore the potential inside the sphere can be expressed as:
+\begin{answer}
+    U_{\text{inside}}(r, \theta) = 4\pi G\dfrac{k r}{3} \cos\theta
+\end{answer}
+and the potential outside the sphere can be expressed as:
+\begin{answer}
+    U_{\text{outside}}(r, \theta) = 4\pi G \dfrac{kR^{3}}{3r^{2}} \cos\theta
+\end{answer}
+
+We can see that inside the sphere the potential is proportional to $r$, which give us a uniform gravitational field, while outside the sphere the potential is proportional to $\cos\theta/r^{2}$, which give us a dipole term in the multipole expansion of $U(\vb{r})$. This implies that the quadrupole moment of this mass distribution is zero, which can be verified by direct calculation:
+\begin{align*}
+    Q_{ij} &\eq \int \sigma(\theta') \qty(3 r'_{i} r'_{j} - r'^{2} \delta_{ij}) \dd[2]{r'} \\ 
+    &\eq k \int \cos\theta' \qty(3 r'_{i} r'_{j} - r'^{2} \delta_{ij}) \dd[2]{r'} \\
+    &\eq k R^{2} \qty(3 r'_{i} r'_{j} - \delta_{ij}) \int_{0}^{\pi} \int_{0}^{2\pi} \cos\theta'  \sin\theta' \dd{\phi'} \dd{\theta'} \\
+    &\eq 2\pi k R^{2} \qty(3 r'_{i} r'_{j} - \delta_{ij}) \int_{0}^{\pi} \cos\theta' \sin\theta' \dd{\theta'} \\
+    &\eq 0 (\text{by ortogonality})
+\end{align*}
+
+Concluding that the quadrupole moment of this mass distribution is zero:
+\begin{answer}
+    Q_{ij} = 0
+\end{answer}
+
+\endex

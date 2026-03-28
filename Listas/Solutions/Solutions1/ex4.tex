@@ -23,11 +23,13 @@ Using the orthogonality of the Legendre polynomials, we have for the integral on
     \int_{-1}^{1} U(\theta) P_{\ell'}(\cos\theta)\dd{\cos\theta} = A_{\ell'} R^{\ell'} \frac{2}{2\ell' + 1}
 \end{equation*}
 implying that:
-\begin{equation*}
+\begin{equation}\label{eq:Al}
     A_{\ell} = \frac{2\ell + 1}{2 R^{\ell}} \int_{-1}^{1} U(\theta) P_{\ell}(\cos\theta)\dd{\cos\theta}
-\end{equation*}
+\end{equation}
 
 Thus, the potential inside the sphere can be expressed as:
 \begin{answer}
     U_{\text{inside}}(r, \theta) = \sum_{\ell=0}^{\infty} \frac{2\ell + 1}{2 R^{\ell}} r^{\ell} P_{\ell}(\cos\theta) \int_{-1}^{1} U(\theta) P_{\ell}(\cos\theta)\dd{\cos\theta} 
 \end{answer}
+
+\endex
